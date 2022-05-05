@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/damax-travel/static/css/main.fd9feba7.css",
+    "main.js": "/damax-travel/static/js/main.faceac04.js",
+    "static/js/787.6a9a334a.chunk.js": "/damax-travel/static/js/787.6a9a334a.chunk.js",
+    "static/media/Frame 28.png": "/damax-travel/static/media/Frame 28.5a4e15a9a0ab603a6e1f.png",
+    "static/media/skate.png": "/damax-travel/static/media/skate.c04420c240370e8b017b.png",
+    "static/media/girl.png": "/damax-travel/static/media/girl.1c3a1018544d0e110e43.png",
+    "static/media/tree.png": "/damax-travel/static/media/tree.31b36f0c96615a739a60.png",
+    "static/media/yellow.png": "/damax-travel/static/media/yellow.3646f168f660ab72bd8d.png",
+    "static/media/blue.png": "/damax-travel/static/media/blue.c71f63835065e0dc6772.png",
+    "static/media/ski.png": "/damax-travel/static/media/ski.19f4ff7e166780c882b3.png",
+    "static/media/picture.png": "/damax-travel/static/media/picture.4204097c1928413aa0ae.png",
+    "static/media/house.png": "/damax-travel/static/media/house.93e348b2a89f5bab14ef.png",
+    "static/media/map.png": "/damax-travel/static/media/map.1b87be1eb2035ee621ae.png",
+    "index.html": "/damax-travel/index.html",
+    "main.fd9feba7.css.map": "/damax-travel/static/css/main.fd9feba7.css.map",
+    "main.faceac04.js.map": "/damax-travel/static/js/main.faceac04.js.map",
+    "787.6a9a334a.chunk.js.map": "/damax-travel/static/js/787.6a9a334a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd9feba7.css",
+    "static/js/main.faceac04.js"
+  ]
+}
