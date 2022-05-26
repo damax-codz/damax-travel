@@ -30,9 +30,33 @@ function Home() {
 
   function loadResize(){
     setWinwidth(window.innerWidth)
+  
+  }
+
+  const dropdown =()=>{
+    if(document.querySelector('.dropdown').style.height=='300px'){
+      document.querySelectorAll('.p').forEach( item => item.style.visibility='hidden')
+      document.querySelectorAll('.but').forEach( item => item.style.visibility='hidden')
+      document.querySelectorAll('.butt').forEach( item => item.style.visibility='hidden')
+    document.querySelector('.dropdown').style.height='0px'
+    document.querySelector('.menu').innerHTML= `<img src=${menu} />  `
+
+    }
+    else{
+      document.querySelector('.dropdown').style.height='300px'
+      document.querySelector('.menu').innerHTML= `<img src=${cancel} />  `
+      document.querySelectorAll('.p').forEach( item => item.style.visibility='visible')
+      document.querySelectorAll('.but').forEach( item => item.style.visibility='visible')
+      document.querySelectorAll('.butt').forEach( item => item.style.visibility='visible')
+    }
+  
+  }
+    
+  useEffect(()=>{
+    window.addEventListener('resize',loadResize)
     if( window.innerWidth<850 ){
       document.querySelector('.links').innerHTML=''
-      document.querySelector('.right').innerHTML= `<div class="menu" ><img src=${menu} /> <span>Menu</span > </div>`
+      document.querySelector('.right').innerHTML= `<div class="menu" ><img src=${menu} /> </div>`
       document.querySelector('.menu').addEventListener('click',dropdown)
     }
     else{
@@ -42,28 +66,8 @@ function Home() {
       document.querySelector('.right').innerHTML= `<button>sign in </button>`
       document.querySelector('.dropdown').innerHTML=''
     }
-  }
-
-  const dropdown =()=>{
-    if(document.querySelector('.dropdown').style.height=='300px'){
-      document.querySelectorAll('.p').forEach( item => item.style.visibility='hidden')
-    document.querySelector('.dropdown').style.height='0px'
-    document.querySelector('.menu').innerHTML= `<img src=${menu} /> <span>Menu</span > `
-
-    }
-    else{
-      document.querySelector('.dropdown').style.height='300px'
-      document.querySelector('.menu').innerHTML= `<img src=${cancel} />  `
-      document.querySelectorAll('.p').forEach( item => item.style.visibility='visible')
-    }
-  
-  }
     
-  useEffect(()=>{
-    window.addEventListener('resize',loadResize)
-    window.addEventListener('load',loadResize)
-    
-    },[]
+    },[winWidth]
   )
 
   return (
@@ -84,6 +88,7 @@ function Home() {
               <span>About Us</span>
               <span>Support</span>
               <span>Language</span>
+             
             </div>
           </div>
           <div className="right">
@@ -95,6 +100,8 @@ function Home() {
           <p className="p">about</p>
           <p className="p">support</p>
           <p className="p">Language</p>
+          <button className="but">Login</button>
+          <button className="butt" style={{ backgroundColor: "white",color: "black"}}>Book now</button>
         </div>
         <div className="bookings">
           <div className="plan">
